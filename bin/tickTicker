@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# get absolute dir
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+export TICKTICKER_RESOURCES="$DIR/../resources"
+
+java -DtickTicker.resources="$TICKTICKER_RESOURCES" -jar "$DIR/../lib/tickTicker.jar"
